@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 
 @RestController
-@RequestMapping("/postagens")//URI que verifica requisições de nome postagens, para 'iniciar' a classe PostagemController.
+@RequestMapping("/postagem")//URI que verifica requisições de nome postagens, para 'iniciar' a classe PostagemController.
 @CrossOrigin("*")//Aceita requisição de todas as origens
 public class PostagemController {
 
