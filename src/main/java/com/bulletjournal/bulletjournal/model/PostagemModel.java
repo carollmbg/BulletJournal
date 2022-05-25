@@ -64,8 +64,19 @@ public class PostagemModel {
     //Aula 13/04
 
     @ManyToOne
-    @JsonIgnoreProperties("post")
-    private Tema tema;
+    @JsonIgnoreProperties("post")//evita recursividade, vai ter muitas postagens pro mesmo tema e tudo bem(explicação xula[chula?])
+    private TemaModel tema;
+
+    public TemaModel getTema() {
+        return tema;
+    }
+    public void setTema(TemaModel tema) {
+        this.tema = tema;
+    }
+
+
+
+
 
     
 }
